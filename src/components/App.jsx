@@ -21,6 +21,10 @@ function App() {
     });
   }
 
+  function updateNote(currentNote, index) {
+    setNoteList(noteList.map((obj) => currentNote.index === obj.id || obj));
+  }
+
   return (
     <div>
       <Header />
@@ -32,6 +36,7 @@ function App() {
           title={note.title}
           content={note.content}
           delete={removeNote}
+          update={updateNote}
         />
       ))}
       <Footer />

@@ -102,3 +102,10 @@ form.create-note button {
   cursor: pointer;
   outline: none;
 }
+
+.updating {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  padding: 1px;
+  outline: none;
+}
